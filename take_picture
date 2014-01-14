@@ -9,7 +9,7 @@ time=`date -u +%s`
 # take a picture
 raspistill --awb incandescent -vf -hf -t 1 -w 800 -h 600 -o pic.jpg
 
-# get brightness and difference
+# get brightness and difference (see https://github.com/invariant/webcam-analyse)
 analysis=(`./analyse pic.jpg prev.jpg`)
 
 # save this as the previous picture ready for next time
