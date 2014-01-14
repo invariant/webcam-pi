@@ -1,8 +1,10 @@
 Raspberry PI webcam script.
 
+## Requirements
+
 Requires [jpegoptim 1.3.0](http://www.kokkonen.net/tjko/projects.html).
 
-# Installing
+## Installing
 
 Clone to your home directory (or a subdirectory).
 

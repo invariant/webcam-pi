@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd # make sure we are in the correct working directory
+# make sure we are in the correct working directory
 pushd `dirname $0`
 
 # get current system time (unix seconds)
