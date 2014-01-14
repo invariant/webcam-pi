@@ -1,8 +1,7 @@
 #!/bin/bash
 
 cd # make sure we are in the correct working directory
-pushd .
-cd `dirname $0`
+pushd `dirname $0`
 
 # get current system time (unix seconds)
 time=`date -u +%s`
@@ -23,7 +22,8 @@ cp pic.jpg prev.jpg
 chmod +r pic.jpg
 
 # construct the url to send to
-url="http://nikz.eu/webcam/save_picture.php?time=$time&brightness=${analysis[0]}&difference=${analysis[1]}"
+endpoint=`cat endpoint`
+url="$endpoint?time=$time&brightness=${analysis[0]}&difference=${analysis[1]}"
 echo $url
 
 # upload it
