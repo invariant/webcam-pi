@@ -17,7 +17,7 @@ analysis=(`./analyse pic.jpg prev.jpg`)
 cp pic.jpg prev.jpg
 
 # reduce size (jpegoptim 1.3.0 from http://www.kokkonen.net/tjko/projects.html)
-jpegoptim -o -vvvv --strip-all -m60 pic.jpg
+/usr/local/bin/jpegoptim -o -vvvv --strip-all -m60 pic.jpg
 
 # set readable to all, since jpegoptim changes the permissions
 chmod +r pic.jpg
